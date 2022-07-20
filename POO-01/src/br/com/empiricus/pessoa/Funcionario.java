@@ -1,6 +1,6 @@
 package br.com.empiricus.pessoa;
 
-public class Funcionario extends Pessoa{
+public abstract class Funcionario extends Pessoa{
 
 	private double salarioFuncionario;
 	private String setorTrabalho;
@@ -25,10 +25,6 @@ public class Funcionario extends Pessoa{
 	}
 	public String getFuncaoTrabalho() {
 		return this.funcaoTrabalho;
-	}
-	
-	public void mostrarSalario() {
-		System.out.println("Salário: " + this.salarioFuncionario);
 	}
 	
 	public double saldoSalario(int diasTrabalhados) {

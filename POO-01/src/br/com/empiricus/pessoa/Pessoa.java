@@ -27,8 +27,5 @@ public abstract class Pessoa {
 	}
 	
 	public void mostrarPessoa() {
-		System.out.println("Nome: " + this.nomePessoa);
-		System.out.println("Idade: " + this.idadePessoa);
-		System.out.println("Endereco: " + this.enderecoPessoa);
 	}
 }
