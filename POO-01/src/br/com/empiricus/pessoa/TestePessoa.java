@@ -35,7 +35,7 @@ public class TestePessoa {
 				}
 				String nomeParaBuscar = scanner.nextLine();
 				mostrarEfetivo(funcionariosEfetivos, nomeParaBuscar);
-			}
+			} // CONTINUAR DAQUI
 		} while (opcaoMenu != '7');
 
 		scanner.close();
