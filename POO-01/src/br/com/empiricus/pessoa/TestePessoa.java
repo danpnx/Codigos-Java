@@ -15,9 +15,8 @@ public class TestePessoa {
 			mostrarMenu();
 			System.out.print("Digite uma opção: ");
 			opcaoMenu = scanner.next().charAt(0);
-			while (opcaoMenu != '1' && opcaoMenu != '2' && opcaoMenu != '3'
-					&& opcaoMenu != '4' && opcaoMenu != '5' && opcaoMenu != '6'
-					&& opcaoMenu != '7') {
+			while (opcaoMenu != '1' && opcaoMenu != '2' && opcaoMenu != '3' && opcaoMenu != '4'
+					&& opcaoMenu != '5' && opcaoMenu != '6' && opcaoMenu != '7') {
 				System.out.println("Opção inválida! Digite novamente: ");
 				if (scanner.hasNextLine()) {
 					nextLineCatch = scanner.nextLine();
@@ -54,8 +53,7 @@ public class TestePessoa {
 
 	public static Efetivo[] cadastrarEfetivo(Efetivo[] funcionariosEfetivos) {
 		Scanner scanner = new Scanner(System.in);
-		Efetivo[] funcionariosEfetivosTemp = new Efetivo[funcionariosEfetivos.length
-				+ 1];
+		Efetivo[] funcionariosEfetivosTemp = new Efetivo[funcionariosEfetivos.length + 1];
 		Efetivo novoEfetivo = new Efetivo();
 		System.out.print("Nome do funcionário: ");
 		novoEfetivo.setNomePessoa(scanner.nextLine());
@@ -85,13 +83,11 @@ public class TestePessoa {
 		return funcionariosEfetivosTemp;
 	}
 
-	public static void mostrarEfetivo(Efetivo[] funcionariosEfetivos,
-			String nomeParaBuscar) {
+	public static void mostrarEfetivo(Efetivo[] funcionariosEfetivos, String nomeParaBuscar) {
 		int contadorBusca = 0;
 
 		if (funcionariosEfetivos.length == 0) {
-			System.out.println(
-					"*** Não há nenhum funcionário efetivo cadastrado no sistema ***");
+			System.out.println("*** Não há nenhum funcionário efetivo cadastrado no sistema ***");
 		} else {
 			for (Efetivo funcionario : funcionariosEfetivos) {
 				if (funcionario.getNomePessoa().equals(nomeParaBuscar)) {
